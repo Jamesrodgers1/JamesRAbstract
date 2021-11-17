@@ -29,10 +29,22 @@ public abstract class Shape {
     private int x; // position top left corner  - a field required in all subclasses
     private int y;
 
+
     public Shape(int x, int y) {
         this.x = x;
         this.y = y;
+
     }
+
+    public abstract double area();
+
+//    private int width; // position top left corner  - a field required in all subclasses
+//    private int height;
+
+//    public Shape1(int width, int height) {
+//        this.x = x;
+//        this.y = y;
+//    }
 
     /**
      * area()
@@ -43,17 +55,30 @@ public abstract class Shape {
      * @return area of the shape
      * (see Rectangle::area() and Circle::area() for implementations)
      */
-    public abstract double area();   // no method body is allowed in an abstract method
+//    public abstract double area();   // no method body is allowed in an abstract method
+//
+//
+//    // methods common to all Shape objects
+//    public int getX() { return x; }
+//    public void setX(int x) { this.x = x;}
+//    public int getY() { return y; }
+//    public void setY(int y) { this.y = y; }
+//
+//    public String toString() {
+//        return this.getClass().getName() +
+//                "(x=" + this.x + ",y=" + this.y + ")";
+//    }
+//
+//    public abstract double area1();   // no method body is allowed in an abstract method
+//
+//
+//    // methods common to all Shape objects
+//    public int getHeight() { return height; }
+//    public void setWidth(int width) { this.width = width;}
+//    public int getWidth() { return width; }
+//    public void setheight(int height) { this.height = height; }
 
 
-    // methods common to all Shape objects
-    public int getX() { return x; }
-    public void setX(int x) { this.x = x;}
-    public int getY() { return y; }
-    public void setY(int y) { this.y = y; }
 
-    public String toString() {
-        return this.getClass().getName() +
-                "(x=" + this.x + ",y=" + this.y + ")";
     }
-}
+
